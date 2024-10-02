@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #7fffd4 10%, #4b5320 50%, #e9d66b);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to right, #7fffd4 10%, #4b5320 50%, #e9d66b);
+    transition: top 0.3s; /* Smooth transition */
+}
+
+/* Flexbox for Navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Ensure items are centered */
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+/* Body Content */
+.container {
+    color: aliceblue;
+    padding: 20px;
+    box-shadow: 0 32px 48px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 12rem; /* Adjust margin-top to account for fixed navbar */
+    margin-bottom: 8rem;
+    max-width: 90vw; /* Fit within viewport */
+    background-color: rgba(0, 0, 0, 0.2); /* Background for better readability */
+}
+
+/* Headings */
+h1 {
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #4b5320;
+    font-size: large;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #007fff;
+}
+
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007fff;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Styling for tables on smaller devices */
+@media (max-width: 768px) {
+    .table {
+        font-size: 0.9em;
+    }
+}
+
+/* Footer Styling */
+footer {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.4);
+    margin-top: auto;
+    background: linear-gradient(to right, #7fffd4 10%, #4b5320 50%, #e9d66b);
+}
+
+footer a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #7fffd4;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 12rem;
+        margin-bottom: 8rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}

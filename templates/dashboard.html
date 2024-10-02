@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}EDA Dashboard Report - DataVista{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center">Exploratory Data Analysis Report</h1>
+
+    <div id="eda-content" class="text-white">
+        <!-- Summary Table and Plots -->
+        {{ eda_content|safe }}
+    </div>
+</div>
+
+{% endblock %}

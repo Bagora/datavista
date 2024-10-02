@@ -1,0 +1,9 @@
+Flask 
+pandas 
+plotly 
+dash 
+flask-uploads
+gunicorn
+faker
+matplotlib
+seaborn

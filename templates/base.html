@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}EDA Dashboard - DataVista{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='../static/style.css') }}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('generate_random_data') }}">Generate Random Data</a></li>
+    </ul>
+</nav>
+
+  {% block content %}{% endblock %}
+
+  <footer class="footer">
+    <p><a href="https://github.com/Bagora/datavista" target="_blank">Github</a></p>
+  </footer>
+
+</body>
+</html>

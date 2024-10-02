@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Generate Random Data - DataVista{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Generate Random Data</h1>
+    
+    <!-- Button to generate random data and download -->
+    <form action="{{ url_for('generate_random_data') }}" method="POST">
+        <button type="submit">Download Random Data</button>
+    </form>
+</div>
+{% endblock %}
